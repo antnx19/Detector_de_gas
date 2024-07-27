@@ -9,6 +9,7 @@ Por Jesus Garcia Antunez y Omar Gabriel Rosas Ortega
 * [Objetivo](#Objetivo)
 * [Objetivos-Especificos](#Objetivos-Especificos)
 * [Materiales](#Materiales)
+* [Coneccion](#Coneccion)
 * [Hardware](#Hardware)
 * [Sofware](#Software)
 
@@ -62,6 +63,10 @@ Brindar una solución para monitorear la calidad del aire en interiores, en las 
     Modulo FTDI
     Resistencias de 220 ohms
     Cables jumper 
+
+<a id="Coneccion"></a>
+## Coneccion
+
 
 <a id="Hardware"></a>
 ## Hardware 
