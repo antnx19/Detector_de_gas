@@ -52,6 +52,25 @@ Brindar una solución para monitorear la calidad del aire en interiores, en las 
 <a id="Materiales"></a>
 # Materiales 
 
+    1 Protoboard
+    1 ESP32CAM
+    1 Sensor MQ6
+    1 Sensor MQ135 
+    1 LED verde
+    1 LED amarillo 
+    1 LED rojo 
+    1 Cable USB
+    1 Modulo FTDI
+    3 Resistencias de 220 ohms
+    Varios Cables jumper 
+
+<a id="Coneccion"></a>
+## Coneccion
+
+
+<a id="Hardware"></a>
+## Hardware 
+
     Protoboard
     ESP32CAM
     Sensor MQ6
@@ -64,15 +83,13 @@ Brindar una solución para monitorear la calidad del aire en interiores, en las 
     Resistencias de 220 ohms
     Cables jumper 
 
-<a id="Coneccion"></a>
-## Coneccion
-
-
-<a id="Hardware"></a>
-## Hardware 
-
 <a id="Software"></a>
 # Software <a id="Software"></a>
-eskcnas
+
+    - IDE arduino 
+    - Telegram 
+    - Node-red 
+
+
 
  
