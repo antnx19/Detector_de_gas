@@ -9,9 +9,9 @@ Por Jesus Garcia Antunez y Omar Gabriel Rosas Ortega
 * [Objetivo](#Objetivo)
 * [Objetivos-Especificos](#Objetivos-Especificos)
 * [Materiales](#Materiales)
-* [Coneccion](#Coneccion)
 * [Hardware](#Hardware)
 * [Sofware](#Software)
+* [Coneccion](#Coneccion)
 
 <a id="Introduccion"></a>
 # Introduccion 
@@ -64,10 +64,6 @@ Brindar una solución para monitorear la calidad del aire en interiores, en las 
     3 Resistencias de 220 ohms
     Varios Cables jumper 
 
-<a id="Coneccion"></a>
-## Coneccion
-
-
 <a id="Hardware"></a>
 ## Hardware 
 
@@ -89,7 +85,8 @@ Brindar una solución para monitorear la calidad del aire en interiores, en las 
     - IDE arduino 
     - Telegram 
     - Node-red 
-
+<a id="Coneccion"></a>
+## Coneccion
 
 
  
