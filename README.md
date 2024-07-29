@@ -12,6 +12,7 @@ Por Jesus Garcia Antunez y Omar Gabriel Rosas Ortega
 * [Hardware](#Hardware)
 * [Sofware](#Software)
 * [Coneccion](#Coneccion)
+* [Configuracion_en_ArduinoIDE](#Configuracion_en_ArduinoIDE)
 
 <a id="Introduccion"></a>
 # Introduccion 
@@ -85,10 +86,12 @@ Brindar una solución para monitorear la calidad del aire en interiores, en las 
     - IDE arduino 
     - Telegram 
     - Node-red 
+
 <a id="Coneccion"></a>
 ## Coneccion
 ![Opera Captura de pantalla_2024-07-28_192537_edu codigoiot com](https://github.com/user-attachments/assets/03087381-c1b1-4bec-9a60-1fce1c39b509)
 
-
+<a id="Configuracion_en_ArduinoIDE"></a>
+## Configuracion_en_ArduinoIDE 
 
  
