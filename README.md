@@ -66,7 +66,6 @@ Brindar una solución para monitorear la calidad del aire en interiores, en las 
 
 <a id="Coneccion"></a>
 ## Coneccion
-![Opera Captura de pantalla_2024-07-28_192537_edu codigoiot com](https://github.com/user-attachments/assets/a90acd9b-aacc-4275-bef2-84f8d0c1c16f)
 
 
 <a id="Hardware"></a>
