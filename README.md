@@ -87,6 +87,8 @@ Brindar una solución para monitorear la calidad del aire en interiores, en las 
     - Node-red 
 <a id="Coneccion"></a>
 ## Coneccion
+![Opera Captura de pantalla_2024-07-28_192537_edu codigoiot com](https://github.com/user-attachments/assets/03087381-c1b1-4bec-9a60-1fce1c39b509)
+
 
 
  
