@@ -93,5 +93,16 @@ Brindar una solución para monitorear la calidad del aire en interiores, en las 
 
 <a id="Configuracion_en_ArduinoIDE"></a>
 ## Configuracion_en_ArduinoIDE 
+Ir a "Tools", seleccionar "All thinker ESP32-CAM"
+
+En "port" seleccionar la salida USB que exista  
+![bad90acf-a21b-44ee-a16a-177bbfd1dd45](https://github.com/user-attachments/assets/605a1df5-522f-4569-ab5e-51f2d5ba5449)
+
+Puedes encontrar el código en el siguiente repositorio:
+
+https://github.com/codigo-iot/detector-gases/tree/main/ESP32/detector-gases
+
+Este programa establece el semáforo en verde cuanto los valores del sensor MQ6 estan debajo de 20 PPM y cuando el valor del sensor MQ135 está debajo de 400 PPM. Para el estado amarillo, los valores del MQ6 deben estar entre 20 y 50 PPM y los valores del MQ135 entre 400 y 600 PPM. Por encima de estos valores, el semáforo se vuelve rojo.
+
 
  
