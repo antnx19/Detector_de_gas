@@ -1,0 +1,635 @@
+[
+    {
+        "id": "40f61451d02fa84c",
+        "type": "tab",
+        "label": "Flow 8",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7b8666dd07c1db97",
+        "type": "serial in",
+        "z": "40f61451d02fa84c",
+        "name": "",
+        "serial": "fd9c9ef49609cab7",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "83cbbddd6c9bb04c",
+                "61d8f637cc419d1b"
+            ]
+        ]
+    },
+    {
+        "id": "53df391f1b7b116c",
+        "type": "debug",
+        "z": "40f61451d02fa84c",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "62b79ddffd797c48",
+        "type": "inject",
+        "z": "40f61451d02fa84c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0.00,344.99,2",
+        "payloadType": "str",
+        "x": 150,
+        "y": 240,
+        "wires": [
+            [
+                "83cbbddd6c9bb04c",
+                "61d8f637cc419d1b"
+            ]
+        ]
+    },
+    {
+        "id": "8a55093065d30b05",
+        "type": "function",
+        "z": "40f61451d02fa84c",
+        "name": "MQ6",
+        "func": "msg.payload = msg.payload[0];\nmsg.topic = \"MQ6\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 160,
+        "wires": [
+            [
+                "bbfb0c6c2f465cf0"
+            ]
+        ]
+    },
+    {
+        "id": "d6d020fb0e12e80e",
+        "type": "function",
+        "z": "40f61451d02fa84c",
+        "name": "MQ135",
+        "func": "msg.payload = msg.payload[1];\nmsg.topic = \"MQ135\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 220,
+        "wires": [
+            [
+                "b929093a3fc44b80"
+            ]
+        ]
+    },
+    {
+        "id": "759192f9b3934933",
+        "type": "function",
+        "z": "40f61451d02fa84c",
+        "name": "Semaforo",
+        "func": "msg.payload = msg.payload[2];\nmsg.topic = \"Semaforo\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 280,
+        "wires": [
+            [
+                "904357abae404f04"
+            ]
+        ]
+    },
+    {
+        "id": "83cbbddd6c9bb04c",
+        "type": "function",
+        "z": "40f61451d02fa84c",
+        "name": "function 2",
+        "func": "msg.payload = \"JesusAntunez,\" + msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 340,
+        "wires": [
+            [
+                "81ca54fa1c21c039"
+            ]
+        ]
+    },
+    {
+        "id": "f07a8c6682fa4726",
+        "type": "mqtt in",
+        "z": "40f61451d02fa84c",
+        "name": "",
+        "topic": "codigoIoT/esp32/detectorGas",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "b842aac977fbae44",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 500,
+        "wires": [
+            [
+                "d0ed40b377f871d0"
+            ]
+        ]
+    },
+    {
+        "id": "ea42e4c38c3e973a",
+        "type": "function",
+        "z": "40f61451d02fa84c",
+        "name": "MQ6",
+        "func": "msg.topic2 = msg.payload[0];\nmsg.payload = msg.payload[1];\nmsg.topic = msg.topic2;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 500,
+        "wires": [
+            [
+                "c6e7cf8b5c400a30"
+            ]
+        ]
+    },
+    {
+        "id": "09913aa31f17bdb9",
+        "type": "function",
+        "z": "40f61451d02fa84c",
+        "name": "MQ135",
+        "func": "msg.topic2 = msg.payload[0];\nmsg.payload = msg.payload[2];\nmsg.topic = msg.topic2;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 560,
+        "wires": [
+            [
+                "9ca9902fe91cca22"
+            ]
+        ]
+    },
+    {
+        "id": "bbfb0c6c2f465cf0",
+        "type": "ui_gauge",
+        "z": "40f61451d02fa84c",
+        "name": "",
+        "group": "da2705ab25db5adf",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Gas LP",
+        "label": "PPM",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "650",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 980,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b929093a3fc44b80",
+        "type": "ui_gauge",
+        "z": "40f61451d02fa84c",
+        "name": "",
+        "group": "da2705ab25db5adf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "CO2",
+        "label": "PPM",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 970,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "904357abae404f04",
+        "type": "ui_gauge",
+        "z": "40f61451d02fa84c",
+        "name": "",
+        "group": "da2705ab25db5adf",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Semaforo",
+        "label": "",
+        "format": "{{value}}",
+        "min": "-1",
+        "max": "2",
+        "colors": [
+            "#ca3838",
+            "#e6e600",
+            "#00b500"
+        ],
+        "seg1": "0",
+        "seg2": "1",
+        "diff": false,
+        "className": "",
+        "x": 980,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c6e7cf8b5c400a30",
+        "type": "ui_chart",
+        "z": "40f61451d02fa84c",
+        "name": "",
+        "group": "d727afbe0879bc63",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "MQ6",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "650",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ca9902fe91cca22",
+        "type": "ui_chart",
+        "z": "40f61451d02fa84c",
+        "name": "",
+        "group": "d727afbe0879bc63",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "MQ135",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 980,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b14427031baeb781",
+        "type": "switch",
+        "z": "40f61451d02fa84c",
+        "name": "",
+        "property": "payload[1]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "1200",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 730,
+        "y": 400,
+        "wires": [
+            [
+                "4ec4e0f0bed0c3b8",
+                "be7a19e96fedc044"
+            ]
+        ]
+    },
+    {
+        "id": "53b577da8106f80c",
+        "type": "telegram sender",
+        "z": "40f61451d02fa84c",
+        "name": "",
+        "bot": "e2d3bab166e66061",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 1110,
+        "y": 460,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4ec4e0f0bed0c3b8",
+        "type": "function",
+        "z": "40f61451d02fa84c",
+        "name": "function 3",
+        "func": "msg.payload = {\n    \"chatId\": 5914032390,\n    \"type\": \"message\",\n    \"content\": \"*Niveles altos de Gas LP detectados* Acciones recomendadas:1. Verificar que las llaves de suministro estén cerradas.2. En caso que no funcione el paso uno, llamar al 911.\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 440,
+        "wires": [
+            [
+                "53b577da8106f80c"
+            ]
+        ]
+    },
+    {
+        "id": "81ca54fa1c21c039",
+        "type": "mqtt out",
+        "z": "40f61451d02fa84c",
+        "name": "",
+        "topic": "codigoIoT/esp32/detectorGas",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b842aac977fbae44",
+        "x": 1050,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "61d8f637cc419d1b",
+        "type": "function",
+        "z": "40f61451d02fa84c",
+        "name": "function 5",
+        "func": "\n// Divide la cadena en partes usando la coma como delimitador\nlet parts = msg.payload.split(\" \")[0].trim().split(',');\n\n// Convierte cada parte en un número\nlet num1 = parseFloat(parts[0].replace(',', '.'));\nlet num2 = parseFloat(parts[1].replace(',', '.'));\nlet num3 = parseFloat(parts[2].replace(',', '.'));\n\n// Asigna los números a msg.payload como un array\nmsg.payload = [num1, num2, num3];\n\nreturn msg;\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 160,
+        "wires": [
+            [
+                "8a55093065d30b05",
+                "d6d020fb0e12e80e",
+                "759192f9b3934933",
+                "b14427031baeb781"
+            ]
+        ]
+    },
+    {
+        "id": "be7a19e96fedc044",
+        "type": "mqtt out",
+        "z": "40f61451d02fa84c",
+        "name": "",
+        "topic": "codigoIoT/esp32/detectorGas",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b842aac977fbae44",
+        "x": 1090,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d0ed40b377f871d0",
+        "type": "function",
+        "z": "40f61451d02fa84c",
+        "name": "function 6",
+        "func": "\n// Divide la cadena en partes usando la coma como delimitador\nlet parts = msg.payload.split(\" \")[0].trim().split(',');\n\n// Convierte cada parte en un número\nlet num1 = parseFloat(parts[0].replace(',', '.'));\nlet num2 = parseFloat(parts[1].replace(',', '.'));\nlet num3 = parseFloat(parts[2].replace(',', '.'));\n\n// Asigna los números a msg.payload como un array\nmsg.payload = [num1, num2, num3];\n\nreturn msg;\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 500,
+        "wires": [
+            [
+                "53df391f1b7b116c",
+                "ea42e4c38c3e973a",
+                "09913aa31f17bdb9"
+            ]
+        ]
+    },
+    {
+        "id": "fd9c9ef49609cab7",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "b842aac977fbae44",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "da2705ab25db5adf",
+        "type": "ui_group",
+        "name": "Instantaneo",
+        "tab": "c58dbe72728e8599",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d727afbe0879bc63",
+        "type": "ui_group",
+        "name": "Historico",
+        "tab": "c58dbe72728e8599",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e2d3bab166e66061",
+        "type": "telegram bot",
+        "botname": "Detector_gas_IoT_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "c58dbe72728e8599",
+        "type": "ui_tab",
+        "name": "Detector de gases",
+        "icon": "dashboard",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    }
+]
