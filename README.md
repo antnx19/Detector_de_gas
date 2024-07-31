@@ -142,8 +142,13 @@ Ya instalados los nodos necesarios importar el JNSON que esta en el repositorio
 ![image](https://github.com/user-attachments/assets/bbf46ad0-fd4e-4354-bdd4-2e7078437523)
 
 Para ver el dashboard de este flow, dirigete a localhost:1880/ui y selecciona la pestaña de este flow en caso de que tengas mas de 1 dashboard funcionando.
+
 ![image](https://github.com/user-attachments/assets/be5a7219-6a71-4649-b62d-400f0491b6c5)
 
+Cada vez que se detectan mas de 1,200 PPM el bot de telegram automaticamente se manda un mensaje de alerta al movil.
+
+![image](https://github.com/user-attachments/assets/4b87ea91-de40-4222-a4af-15ae45aa5443)
+![image](https://github.com/user-attachments/assets/7f69cc01-217b-449a-a2be-83d5d2899397)
 
         
 
