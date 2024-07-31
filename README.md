@@ -105,4 +105,5 @@ https://github.com/codigo-iot/detector-gases/tree/main/ESP32/detector-gases
 Este programa establece el semáforo en verde cuanto los valores del sensor MQ6 estan debajo de 20 PPM y cuando el valor del sensor MQ135 está debajo de 400 PPM. Para el estado amarillo, los valores del MQ6 deben estar entre 20 y 50 PPM y los valores del MQ135 entre 400 y 600 PPM. Por encima de estos valores, el semáforo se vuelve rojo.
 
 
+
  
