@@ -13,7 +13,9 @@ Por Jesus Garcia Antunez y Omar Gabriel Rosas Ortega
 * [Sofware](#Software)
 * [Coneccion](#Coneccion)
 * [Configuracion_en_ArduinoIDE](#Configuracion_en_ArduinoIDE)
+* [Bot](#Bot_telegram)
 * [Node-Red](#Node-Red)
+  
 
 <a id="Introduccion"></a>
 # Introduccion 
@@ -112,6 +114,11 @@ Una vez copiado el codigo, correrlo para cargarlo en la ESP32-CAM correctamente.
 Comprobar el funcionamiento en la terminal serial, donde dara las lecturas del sensor MQ6 y del sensor MQ135
 ![image](https://github.com/user-attachments/assets/10993951-1538-4b92-9bac-ac1da9e29bd7)
 
+<a id="Bot_telegram"></a>
+# Bot_telegram
+Para la configuracion de telegram revise el siguiente link: 
+https://aprendiendoarduino.wordpress.com/2020/04/11/crea-un-bot-de-telegram-con-node-red/
+
 <a id="Node-Red"></a>
 # Node-Red
 Se realizara un flow en node-red esto con la finalidad de que se lean los datos del microcontralador y se enviara a un bloker para poder visualizar los datos de forma coleccitiva, a la vez que tambien en dado caso se superar cierto nivel de PPM, se mandara un mensaje por medio de un bot telegram al movil.
@@ -132,6 +139,11 @@ Para eso se necesitan los siguientes nodos para que funcione correctamente:
 
 ## Flow
 Ya instalados los nodos necesarios importar el JNSON que esta en el repositorio 
+![image](https://github.com/user-attachments/assets/bbf46ad0-fd4e-4354-bdd4-2e7078437523)
+
+Para ver el dashboard de este flow, dirigete a localhost:1880/ui y selecciona la pestaña de este flow en caso de que tengas mas de 1 dashboard funcionando.
+![image](https://github.com/user-attachments/assets/be5a7219-6a71-4649-b62d-400f0491b6c5)
+
 
         
 
