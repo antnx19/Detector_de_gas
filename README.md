@@ -131,7 +131,7 @@ Para eso se necesitan los siguientes nodos para que funcione correctamente:
 ![Opera Captura de pantalla_2024-07-29_194259_127 0 0 1](https://github.com/user-attachments/assets/8608ac0f-1663-4179-9a31-12e753da0b56)
 
 ## Flow
-Ya instalados los nodos necesarios importar el siguiente JNSON:
+Ya instalados los nodos necesarios importar el JNSON que esta en el repositorio 
 
         
 
