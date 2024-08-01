@@ -149,6 +149,7 @@ Cada vez que se detectan mas de 1,200 PPM el bot de telegram automaticamente se 
 
 ![image](https://github.com/user-attachments/assets/4b87ea91-de40-4222-a4af-15ae45aa5443)
 ![image](https://github.com/user-attachments/assets/7f69cc01-217b-449a-a2be-83d5d2899397)
-
-        
+![image](https://github.com/user-attachments/assets/0adac4a7-85ae-4dc3-bc8c-1bd1549488d9)
+![image](https://github.com/user-attachments/assets/b3f625b8-ec4b-4875-8f04-a03de5ea2079)
+![image](https://github.com/user-attachments/assets/e0e964ca-7697-4a4b-90ea-6a01a606a1a1)
 
