@@ -153,3 +153,4 @@ Cada vez que se detectan mas de 1,200 PPM el bot de telegram automaticamente se 
 ![image](https://github.com/user-attachments/assets/b3f625b8-ec4b-4875-8f04-a03de5ea2079)
 ![image](https://github.com/user-attachments/assets/e0e964ca-7697-4a4b-90ea-6a01a606a1a1)
 
+Este proyecto fue realizado en el marco del curso IoT Essentials Developer impartido por [Codigo IoT ](https://www.codigoiot.com/) y organizado por la [Asociación Mexicana del Internet de las Cosas](https://www.asociacioniot.org/).
